@@ -1,0 +1,15 @@
+# local secrets and runtime state
+config.json
+frame.json
+
+# python
+__pycache__/
+*.py[cod]
+
+# logs / editor noise
+*.log
+server.out
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

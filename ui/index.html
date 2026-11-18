@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARIA</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div id="app">
+  <header class="bar">
+    <div class="brand">
+      <span id="dot" class="dot" title="Live connection"></span>
+      <span class="name">ARIA</span>
+      <span class="sub">ableton</span>
+    </div>
+    <div class="tools">
+      <select id="model" title="Model"></select>
+      <button id="new" title="New chat (Ctrl+K)">+</button>
+    </div>
+  </header>
+
+  <div id="banner" class="banner hidden">
+    <b>Live not connected.</b>
+    <span>Open Live &rarr; Settings &rarr; Link, Tempo &amp; MIDI &rarr; MIDI &rarr; set a free Control
+    Surface slot to <code>AbletonMCP</code>, Input/Output <code>None</code>.</span>
+    <button id="retry">retry</button>
+  </div>
+
+  <main id="log" class="log">
+    <div class="empty" id="empty">
+      <p>Session copilot. Ask about the set, or tell it what to change.</p>
+      <div class="chips">
+        <button data-q="What's in my set right now?">read my set</button>
+        <button data-q="Set the tempo to 128 and start playback">128 &amp; play</button>
+        <button data-q="Make a 4-bar rolling bassline in A minor on a new MIDI track">write a bassline</button>
+        <button data-q="Which tracks are clipping or have no instrument loaded?">check the mix</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="composer">
+    <textarea id="input" rows="1" placeholder="Ask ARIA&hellip;" spellcheck="false"></textarea>
+    <button id="send" title="Send (Enter)">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <path d="M3 20.5 21 12 3 3.5 3 10l12 2-12 2z" fill="currentColor"/>
+      </svg>
+    </button>
+  </footer>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

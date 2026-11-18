@@ -1,0 +1,9 @@
+{
+  "api_base": "http://localhost:20128/v1",
+  "api_key": "PUT-YOUR-KEY-HERE",
+  "model": "ds-web/deepseek-v4-flash",
+  "temperature": 0.4,
+  "max_steps": 8,
+  "abelton_host": "127.0.0.1",
+  "abelton_port": 9877
+}
